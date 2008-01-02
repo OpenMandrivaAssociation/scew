@@ -14,6 +14,7 @@ Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
 License: LGPL
 Group: Development/C
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: expat-devel
 URL: http://www.nongnu.org/scew/
 
