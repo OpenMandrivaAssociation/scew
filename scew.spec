@@ -7,7 +7,7 @@
 %define libnamedev %{libname}-devel
 
 
-Summary: SCEW provides an easy interface around the XML Expat library.
+Summary: SCEW provides an easy interface around the XML Expat library
 Name: %{name}
 Version: %{version}
 Release: %{release}
