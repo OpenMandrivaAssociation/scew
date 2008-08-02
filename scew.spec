@@ -1,6 +1,6 @@
 %define name scew
 %define version 0.4.0
-%define release %mkrel 3
+%define release %mkrel 4
 
 %define libname %mklibname %{name}
 #%define libname lib%{name}
