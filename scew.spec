@@ -75,6 +75,9 @@ This package contains the static development file for %{name}.
 %configure2_5x
 %make 
 
+%check
+%make check
+
 %install
 rm -rf %{buildroot}
 %makeinstall
