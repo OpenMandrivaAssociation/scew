@@ -1,13 +1,13 @@
 %define name scew
 %define version 0.4.0
-%define release %mkrel 1
+%define release 2
 
 %define libname %mklibname %{name}
 #%define libname lib%{name}
 %define libnamedev %{libname}-devel
 
 
-Summary: SCEW provides an easy interface around the XML Expat library.
+Summary: SCEW provides an easy interface around the XML Expat library
 Name: %{name}
 Version: %{version}
 Release: %{release}
