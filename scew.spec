@@ -1,16 +1,10 @@
-%define name scew
-%define version 0.4.0
-%define release 2
-
 %define libname %mklibname %{name}
-#%define libname lib%{name}
 %define libnamedev %{libname}-devel
 
-
 Summary: SCEW provides an easy interface around the XML Expat library
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name:    scew
+Version: 0.4.0
+Release: 2
 Source0: %{name}-%{version}.tar.bz2
 License: LGPL
 Group: Development/C
@@ -43,18 +37,15 @@ applications which will use scew.
 %setup -q
 
 %build
-%configure
+%configure --includedir=%{_includedir}/%{name}
 %make 
 
 %install
-%makeinstall
+%makeinstall_std
 
-mkdir -p $RPM_BUILD_ROOT%_bindir
-install -m 755 examples/scew_print/scew_print $RPM_BUILD_ROOT%_bindir/
-install -m 755 examples/scew_write/scew_write $RPM_BUILD_ROOT%_bindir/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+mkdir -p %{buildroot}%{_bindir}
+install -m 755 examples/scew_print/scew_print %{buildroot}%{_bindir}
+install -m 755 examples/scew_write/scew_write %{buildroot}%{_bindir}
 
 %files -n %libnamedev
 %defattr(-,root,root,0755)
