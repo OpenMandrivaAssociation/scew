@@ -1,7 +1,7 @@
 %define libname %mklibname %{name}
 %define libnamedev %{libname}-devel
 
-Summary: SCEW provides an easy interface around the XML Expat library
+Summary: Provides an easy interface around the XML Expat library
 Name:    scew
 Version: 0.4.0
 Release: 2
