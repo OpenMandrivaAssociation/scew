@@ -6,7 +6,7 @@
 Summary: Provides an easy interface around the XML Expat library
 Name:    scew
 Version: 0.4.0
-Release: 3
+Release: 4
 Source0: %{name}-%{version}.tar.bz2
 License: LGPL
 Group: Development/C
