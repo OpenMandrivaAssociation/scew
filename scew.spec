@@ -11,7 +11,7 @@ Source0: %{name}-%{version}.tar.bz2
 License: LGPL
 Group: Development/C
 BuildRequires: expat-devel
-URL: http://www.nongnu.org/scew/
+URL: https://www.nongnu.org/scew/
 
 %description 
 SCEW (Simple C Expat Wrapper) incorporated functions to create XML
