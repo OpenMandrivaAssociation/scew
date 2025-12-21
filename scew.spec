@@ -10,6 +10,11 @@ Release: 4
 Source0: %{name}-%{version}.tar.bz2
 License: LGPL
 Group: Development/C
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: expat-devel
 URL: https://www.nongnu.org/scew/
 
